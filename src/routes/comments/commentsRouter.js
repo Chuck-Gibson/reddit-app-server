@@ -22,7 +22,6 @@ commentsRouter.get('/:postId', async (req, res, next) => {
   fetchingUrl += `/${postId}`;
   fetchingUrl += '.json';
   if (comment) fetchingUrl += `?comment=${comment}`;
-  console.log("fetching "+ fetchingUrl)
 
 // Fetch
   try {
